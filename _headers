@@ -1,2 +1,0 @@
-/*
-  Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://www.googletagmanager.com https://moderate.cleantalk.org https://www.google-analytics.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://api.wpmet.com https://cdn.tailwindcss.com;
