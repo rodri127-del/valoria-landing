@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO BÁSICO  -->
+    <!-- SEO BÁSICO -->
     <title>ValoriA | Vende tu piso más rápido y al mejor precio</title>
     <meta name="description" content="¿Tu piso no se vende? Te ofrecemos una valoración gratuita y te conectamos con las mejores agencias inmobiliarias de tu zona. Sin compromiso. Descubre el valor real de tu inmueble.">
     <meta name="keywords" content="vender piso, valoracion inmobiliaria gratis, mi piso no se vende, agencias inmobiliarias">
@@ -29,14 +29,49 @@
     }
     </script>
 
-    <!-- RECURSOS EXTERNOS -->
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon"> <!-- Añade un favicon -->
+    <!-- ESTILOS INLINE - LA SOLUCIÓN DEFINITIVA -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-blue': '#2563eb',
+                        'custom-orange': '#f97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* --- Estilos personalizados --- */
+        :root {
+          --primary-color: #2563eb;
+          --secondary-color: #f97316;
+          --background-light: #f9fafb;
+          --text-dark: #1f2937;
+        }
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        details summary {
+          cursor: pointer;
+        }
+        details summary:hover {
+          background-color: #e5e7eb;
+        }
+        .fade-in {
+          animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+    </style>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- Incluimos el Header desde un archivo (opcional, pero bueno para el futuro) -->
     <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div class="container mx-auto px-6 py-16 text-center">
             <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">¿Tu piso no se vende? No es tu culpa, es tu estrategia.</h1>
@@ -47,7 +82,6 @@
     </header>
 
     <main>
-        <!-- SECCIÓN 2: PRUEBA SOCIAL -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-4">Más de 200 propietarios como tú ya han resuelto su venta</h2>
@@ -59,7 +93,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 3: EL PROBLEMA -->
         <section class="py-16 bg-gray-100">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto text-center">
@@ -74,7 +107,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 4: LA SOLUCIÓN -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
@@ -88,7 +120,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 5: EL FORMULARIO -->
         <section id="formulario" class="py-16 bg-gray-100">
             <div class="container mx-auto px-6">
                 <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-xl">
@@ -109,7 +140,6 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 6: FAQ -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto">
@@ -124,7 +154,6 @@
         </section>
     </main>
 
-    <!-- Incluimos el Footer -->
     <footer class="bg-gray-800 text-white mt-12 py-8">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2024 ValoriA. Todos los derechos reservados.</p>
@@ -135,7 +164,6 @@
         </div>
     </footer>
 
-    <!-- RECURSOS JS -->
     <script src="app.js"></script>
 </body>
 </html>
