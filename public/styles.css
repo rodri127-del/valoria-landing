@@ -3,10 +3,6 @@
    Incluye Tailwind CSS y estilos personalizados.
    ========================================================================== */
 
-/* --- IMPORTACIÓN DE TAILWIND CSS --- */
-/* Esta línea importa la librería completa de Tailwind CSS desde su CDN. */
-@import 'https://cdn.tailwindcss.com';
-
 /* ==========================================================================
    Estilos personalizados para ValoriA
    ========================================================================== */
