@@ -29,17 +29,13 @@
     }
     </script>
 
-    <!-- ESTILOS INLINE - LA SOLUCIÓN DEFINITIVA -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-          tailwind.config = {
-            // Esta línea le dice a Tailwind que tu dominio es de confianza
-            content: [
-              "./public/**/*.{html,js}",
-              "./src/**/*.{html,js}"
-            ],
-          }
-        </script>
+    <!-- ESTILOS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./public/**/*.{html,js}"]
+        }
+    </script>
     <style>
         /* --- Estilos personalizados --- */
         :root {
