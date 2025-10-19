@@ -30,19 +30,16 @@
     </script>
 
     <!-- ESTILOS INLINE - LA SOLUCIÓN DEFINITIVA -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'custom-blue': '#2563eb',
-                        'custom-orange': '#f97316',
-                    }
-                }
-            }
-        }
-    </script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            // Esta línea le dice a Tailwind que tu dominio es de confianza
+            content: [
+              "./public/**/*.{html,js}",
+              "./src/**/*.{html,js}"
+            ],
+          }
+        </script>
     <style>
         /* --- Estilos personalizados --- */
         :root {
