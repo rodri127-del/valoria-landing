@@ -14,7 +14,7 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
     messageDiv.classList.add('text-blue-600');
 
     // La URL de tu webhook de n8n. ¡Aún no la tienes, pero la pondremos aquí!
-    const n8nWebhookUrl = 'https://n8n.novaproflow.com:5678/webhook/lead-propietario'; 
+    const n8nWebhookUrl = 'https://n8n.novaproflow.com/webhook/lead-propietario'; 
 
     fetch(n8nWebhookUrl, {
         method: 'POST',
